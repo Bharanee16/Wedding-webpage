@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding - Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+    
+        .navigation {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            backdrop-filter: blur(5px);
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .glam-wed {
+            font-size: 50px;
+            font-weight: 100;
+            font-family: "Abril Fatface", serif;
+            margin-left: 40px;
+            color: goldenrod;
+        }
+
+        .glam-wed span:first-child,
+        .glam-wed span:last-child {
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            font-size: 20px;
+            gap: 3rem;
+            margin-right: 30px;
+            align-items: center;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+    
+        }
+
+        nav ul li a:hover {
+            color: goldenrod;
+            transform: scale(1.2);
+        }
+
+        body {
+            background-image: url('wed.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .content {
+            margin-left: 50px;
+            color: white;
+            margin-top: 200px;
+            animation: slideInFromRight 1.5s ease-out;
+        }
+
+        .content h1 {
+            font-size: 60px;
+            margin: 0;
+            color: goldenrod;
+        }
+
+        .content p {
+            font-size: 25px;
+            margin: 10px 0 20px;
+        }
+
+        .content button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: 2px solid goldenrod;
+            background-color: transparent;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .content button:hover {
+            color: black;
+            background-color: goldenrod;
+            border: 2px solid black;
+        }
+
+        .footer {
+            backdrop-filter: blur(5px);
+            background-color: rgba(0, 0, 0, 0.5); 
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer .social-media {
+            margin: 10px 0;
+        }
+
+        .footer .social-media a {
+            color: goldenrod;
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .footer .social-media a:hover {
+            color: white;
+            transform: scale(1.2);
+        }
+
+        .footer .address {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+
+        .footer .copyright {
+            margin-top: 10px;
+            font-size: 16px;
+            color: goldenrod;
+        }
+        @keyframes slideInFromRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <div class="glam-wed">
+            <span>G</span>lam <span>W</span>ed
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html" style="color:goldenrod">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <p>We Plan, </p>
+        <h1>Magical Moments</h1>
+        <p>Let us help you create unforgettable memories.</p>
+        <button onclick="location.href='aboutus.html';">Know More</button>
+    </div>
+
+    
+    <div class="footer">
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="address">
+            123 Wedding Lane, Dream City, Wonderland, + 91 63699 46997
+        </div>
+        <div class="copyright">
+            &copy; 2024 Glam Wed. All Rights Reserved.
+        </div>
+    </div>
+</body>
+</html>
